@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Universe 🎂✨</title>
+    <title>Happy Birthday ILISHAAAA 🎂✨
+A.k.a My Sister and best friend!!!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,800;14..32,900&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
@@ -396,7 +397,7 @@
 
         .name-script {
             font-family: 'Dancing Script', cursive;
-            font-size: clamp(1.6rem, 6vw, 2.6rem);
+            font-size: clamp(1.8rem, 7vw, 3rem);
             font-weight: 700;
             background: linear-gradient(135deg, #fbbf24, #f0abfc, #c4b5fd);
             -webkit-background-clip: text;
@@ -410,7 +411,7 @@
             min-height: 1.3em;
         }
 
-        /* ===== TYPEWRITER (for subtitle messages) ===== */
+        /* ===== TYPEWRITER ===== */
         .typewriter-container {
             min-height: 2rem;
             margin-bottom: 1.5rem;
@@ -439,7 +440,7 @@
             50% { opacity: 0; }
         }
 
-        /* ===== WELCOME MESSAGE (typing, multiline) ===== */
+        /* ===== WELCOME MESSAGE ===== */
         .welcome-message {
             font-size: clamp(0.95rem, 2.5vw, 1.05rem);
             line-height: 1.7;
@@ -451,13 +452,8 @@
             font-weight: 400;
         }
 
-        .welcome-message .typed-content {
-            display: inline;
-        }
-
-        .welcome-message .cursor-type {
-            height: 1.1em;
-        }
+        .welcome-message .typed-content { display: inline; }
+        .welcome-message .cursor-type { height: 1.1em; }
 
         .welcome-message .highlight {
             color: #f0abfc;
@@ -934,7 +930,7 @@
         <!-- Wish Jar -->
         <div class="wish-jar">
             <div class="wish-jar-icon">🫙</div>
-            <input type="text" id="wishInput" placeholder="Write a birthday wish..." maxlength="100">
+            <input type="text" id="wishInput" placeholder="Write a wish for ILISHAAAA..." maxlength="100">
             <button id="wishBtn"><i class="fas fa-plus"></i> Add</button>
         </div>
         <div class="wish-list" id="wishList"></div>
@@ -966,8 +962,8 @@
         (function() {
             'use strict';
 
-            // ===== GET NAME EARLY =====
-            const nameInput = prompt('What is the birthday person\'s name?', 'Dear Friend') || 'Dear Friend';
+            // ===== BIRTHDAY NAME (HARDCODED) =====
+            const nameInput = 'ILISHAAAA';
             document.getElementById('nameDisplay').textContent = nameInput;
 
             // ===== CUSTOM CURSOR =====
@@ -1163,7 +1159,6 @@
             }
 
             // ===== MASTER TYPEWRITER ENGINE =====
-            // A reusable typing function that types text into an element
             function typeText(element, text, options = {}) {
                 return new Promise((resolve) => {
                     const {
@@ -1179,7 +1174,6 @@
                     setTimeout(() => {
                         function type() {
                             if (i < text.length) {
-                                // Handle HTML tags as single units
                                 if (allowHTML && text[i] === '<') {
                                     const closeIdx = text.indexOf('>', i);
                                     if (closeIdx !== -1) {
@@ -1218,7 +1212,6 @@
                 'Made with love, just for you 💜'
             ];
 
-            // Continuous subtitle typewriter (loops)
             let subIdx = 0, subChar = 0, subDeleting = false;
             function subtitleLoop() {
                 const current = subtitlePhrases[subIdx];
@@ -1239,13 +1232,12 @@
                 setTimeout(subtitleLoop, speed);
             }
 
-            // Master sequence: title → welcome message → subtitle loop
             async function runTypingSequence() {
                 // 1. Type the main title
                 await typeText(titleEl, 'Happy Birthday', { speed: 120, startDelay: 600 });
 
                 // 2. Type the welcome message (with HTML highlighting)
-                const welcomeText = `Dear <span class="highlight">${nameInput}</span>, today is all about you. 🎉 May your day overflow with joy, laughter, and cake. Wishing you a year of magic, adventure, and dreams coming true. Keep shining bright! ✨`;
+                const welcomeText = `Dear <span class="highlight">ILISHAAAA</span>, today is all about you. 🎉 May your day overflow with joy, laughter, and cake. Wishing you a year of magic, adventure, and dreams coming true. Keep shining bright! ✨`;
                 await typeText(welcomeTyped, welcomeText, {
                     speed: 35,
                     startDelay: 400,
@@ -1393,29 +1385,26 @@
 
             const surprises = [
                 {
-                    title: `Happy Birthday My Friend A.k.A  Sisterr  ILISHAAAAAA !!!!!!!, ${nameInput}! 🎉`,
-                    message: `May your day be filled with <span class="highlight">joy</span>, <span class="highlight">laughter</span>, and endless <span class="highlight">cake</span>! 🍰<br><br>Wishing you a year of amazing adventures, success, and beautiful moments. You deserve all the happiness in the world. Keep shining bright! ✨<span class="emoji-row">🎈🥳🎁🎊💫</span>`
+                    title: `Happy Birthday, ILISHAAAA! 🎉`,
+                    message: `May your day be filled with <span class="highlight">joy</span>, <span class="highlight">laughter</span>, and endless <span class="highlight">cake</span>! 🍰<br><br>Wishing you a year of amazing adventures, success, and beautiful moments. You deserve all the happiness in the world. Keep shining bright, ILISHAAAA! ✨<span class="emoji-row">🎈🥳🎁🎊💫</span>`
                 },
                 {
-                    title: `Another Year of Awesome, ${nameInput}! 🥳`,
-                    message: `You make the world a brighter place just by being in it. <span class="highlight">Celebrate big</span>, laugh loud, and eat way too much cake today! 🎂<br><br>Here's to new adventures, big dreams, and unforgettable memories. Cheers to you! 🥂<span class="emoji-row">🎉🎂🎈✨🥳</span>`
+                    title: `Another Year of Awesome, ILISHAAAA! 🥳`,
+                    message: `You make the world a brighter place just by being in it. <span class="highlight">Celebrate big</span>, laugh loud, and eat way too much cake today! 🎂<br><br>Here's to new adventures, big dreams, and unforgettable memories, ILISHAAAA. Cheers to you! 🥂<span class="emoji-row">🎉🎂🎈✨🥳</span>`
                 },
                 {
-                    title: `It's Your Day, ${nameInput}! ✨`,
-                    message: `The universe conspired to bring you into this world, and we're all luckier for it. <span class="highlight">May every wish come true</span> and every dream take flight. 🎈<br><br>Enjoy every single moment of your special day — you've earned it! 💫<span class="emoji-row">🌟💜🎁🎊✨</span>`
+                    title: `It's Your Day, ILISHAAAA! ✨`,
+                    message: `The universe conspired to bring you into this world, and we're all luckier for it. <span class="highlight">May every wish come true</span> and every dream take flight. 🎈<br><br>Enjoy every single moment of your special day, ILISHAAAA — you've earned it! 💫<span class="emoji-row">🌟💜🎁🎊✨</span>`
                 },
                 {
-                    title: `Birthday Magic for ${nameInput}! 🎂`,
-                    message: `Today is all about <span class="highlight">you</span> — your smile, your laugh, your wonderful spirit. May this year bring you everything your heart desires. 💜<br><br>Party hard, laugh often, and remember how loved you are. Happy birthday! Aur jara aapne bhai ki bhi sun na karrrrr!!!! 🎁<span class="emoji-row">🎈🎂🎉💖🌟</span>`
+                    title: `Birthday Magic for ILISHAAAA! 🎂`,
+                    message: `Today is all about <span class="highlight">you</span>, ILISHAAAA — your smile, your laugh, your wonderful spirit. May this year bring you everything your heart desires. 💜<br><br>Party hard, laugh often, and remember how loved you are. Happy birthday! 🎁<span class="emoji-row">🎈🎂🎉💖🌟</span>`
                 }
             ];
-
-            let modalTypingCancel = null;
 
             async function openModal() {
                 const random = surprises[Math.floor(Math.random() * surprises.length)];
 
-                // Reset and show
                 modalTitle.innerHTML = '';
                 modalMessage.innerHTML = '';
                 modalOverlay.classList.add('active');
@@ -1425,10 +1414,8 @@
                 sparkleRain();
                 if (musicEnabled) playMelody();
 
-                // Type title
                 await typeText(modalTitle, random.title, { speed: 80, startDelay: 300 });
 
-                // Type message (with HTML)
                 await typeText(modalMessage, random.message, {
                     speed: 30,
                     startDelay: 200,
